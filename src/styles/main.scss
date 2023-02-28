@@ -1,0 +1,106 @@
+// ? Import bulma
+@import "../../node_modules/bulma/bulma.sass";
+
+// my classes
+
+// ! this is responsible for the bg img of of the hero
+.has-bg-vid {
+  // background: url('/media/landing-page-2.gif')center center;
+  // background-size: cover;
+// ! remember to add link to gif when upladoed onto google
+}
+
+//? would like to create an overlay so the text is clearer
+
+
+
+
+// template from bulma docs
+
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+
+// ! tried to set up carousel with BulmaCarousel, but my imports were not working and I had some trouble using the scripts with react
+// ! left code below for later in case I can figure out what more I need to do
+
+// setting up bulmaCarousel
+  // made some adjustments in hopes of not repeating code 
+
+// Import component
+// @import "bulmaCarousel.sass"
+
+.carousel {
+  position: relative;
+}
+
+.carouselItem {
+  height: 300px;
+  background: grey;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  display: none;
+
+}
+
+.carouselNav{
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+
+}
+
+.carouselButton{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+
+}
+
+.selected{
+
+}
